@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<center><h1>최대값구하기</h1></center>
+<script>
+// 값을 하나 읽어 들입니다.
+var num = prompt("숫자 입력~");
+//alert("입력값은" + num);
+document.write"<center><h1>")
+document.write(num+"<br>")
+val = num.split(' ')
+document.write("배열 길이 :" + val.length + "<br>");
+data = val.map(Number)
+for ( k = 0 ; k<(data.length-1) ; k++){
+ for ( i = 0 ; i<(data.length-1) ; i++){
+  if (data[i] > data[i+1] ){
+    tmp = data[i];
+    data[i] = data[i+1;
+    data[i+1] = tmp
+}
+ }
+document.write("정렬후 :" + data)
+document.write"<center></h1>")
+</script>
+</body>
+</html>
